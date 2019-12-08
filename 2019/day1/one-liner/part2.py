@@ -1,0 +1,1 @@
+(lambda _: print(sum([(fuel2 := lambda num: (help := lambda current: 0 if current <= 0 else current + help(fuel(current)))(fuel(num)))(int(line)) for line in open("input").readlines()])))(fuel := lambda num: num//3-2)
